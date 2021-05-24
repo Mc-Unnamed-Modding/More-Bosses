@@ -1,6 +1,9 @@
 package com.unnamedmodding.unnamedbosses;
 
 import com.unnamedmodding.unnamedbosses.client.render.entity.RenderYeti;
+import com.unnamedmodding.unnamedbosses.entities.ModEntities;
+import com.unnamedmodding.unnamedbosses.entities.ModSpawns;
+import com.unnamedmodding.unnamedbosses.setup.Registration;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
@@ -15,6 +18,9 @@ public class UnnamedBosses
 
     public UnnamedBosses()
     {
+        Registration.register();
+
+
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         MinecraftForge.EVENT_BUS.register(this);
@@ -23,8 +29,11 @@ public class UnnamedBosses
     private void setup(final FMLCommonSetupEvent event)
     {
         MinecraftForge.EVENT_BUS.register(new ModSpawns());
+
         ModEntities.registerEntityAttributes();
     }
+
+
 
     private void doClientStuff(final FMLClientSetupEvent event)
     {
