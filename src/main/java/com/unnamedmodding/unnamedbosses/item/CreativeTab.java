@@ -1,13 +1,15 @@
 package com.unnamedmodding.unnamedbosses.item;
 
-import com.unnamedmodding.unnamedbosses.UnnamedBosses;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
 public final class CreativeTab
 {
-    public static final ItemGroup UNNAMED_BOSSES = new ItemGroup(UnnamedBosses.MOD_ID)
+
+
+    public static final ItemGroup UNNAMED_BOSSES_TAB = new ItemGroup("unnamedbossestab")
     {
+
         @Override
         public ItemStack makeIcon()
         {
@@ -19,6 +21,8 @@ public final class CreativeTab
         {
             return true;
         }
+
     };
+
 
 }

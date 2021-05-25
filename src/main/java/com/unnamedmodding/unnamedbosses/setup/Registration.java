@@ -18,6 +18,8 @@ public class Registration
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, UnnamedBosses.MOD_ID);
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES, UnnamedBosses.MOD_ID);
 
+
+
     public static void register()
     {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -28,7 +30,6 @@ public class Registration
         ModItemRegistry.register();
         ModBlockRegistry.register();
         ModEntityRegistry.register();
-
 
     }
 

@@ -18,6 +18,11 @@ public class UnnamedBosses
 {
     public static final String MOD_ID = "unnamedbosses";
 
+    public static void add()
+    {
+
+    }
+
     public UnnamedBosses()
     {
         Registration.register();
