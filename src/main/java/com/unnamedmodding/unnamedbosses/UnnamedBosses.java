@@ -1,6 +1,6 @@
 package com.unnamedmodding.unnamedbosses;
 
-import com.unnamedmodding.unnamedbosses.client.render.entity.RenderYeti;
+import com.unnamedmodding.unnamedbosses.entities.render.entity.RenderYeti;
 import com.unnamedmodding.unnamedbosses.entities.ModEntities;
 import com.unnamedmodding.unnamedbosses.entities.ModSpawns;
 import com.unnamedmodding.unnamedbosses.setup.Registration;
