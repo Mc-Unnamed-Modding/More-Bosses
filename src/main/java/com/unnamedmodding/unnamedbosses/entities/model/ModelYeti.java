@@ -2,6 +2,7 @@ package com.unnamedmodding.unnamedbosses.entities.model;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.unnamedmodding.unnamedbosses.entities.YetiEntity;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.entity.Entity;
@@ -9,7 +10,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class ModelYeti<T extends Entity> extends EntityModel<T>
+public class ModelYeti<T extends YetiEntity> extends EntityModel<T>
 {
     private final ModelRenderer head;
     private final ModelRenderer torso;
@@ -140,17 +141,35 @@ public class ModelYeti<T extends Entity> extends EntityModel<T>
     }
 
     @Override
-    public void setupAnim(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch)
-    {
-        //previously the render function, render code was moved to a method below
+    public void setupAnim(T p_225597_1_, float p_225597_2_, float p_225597_3_, float p_225597_4_, float p_225597_5_, float p_225597_6_) {
+
     }
+
 
     @Override
     public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha)
     {
         head.render(matrixStack, buffer, packedLight, packedOverlay);
         spikes.render(matrixStack, buffer, packedLight, packedOverlay);
+        spike1.render(matrixStack, buffer, packedLight, packedOverlay);
+        top.render(matrixStack, buffer, packedLight, packedOverlay);
+        bottom.render(matrixStack, buffer, packedLight, packedOverlay);
+        spike2.render(matrixStack, buffer, packedLight, packedOverlay);
+        top2.render(matrixStack, buffer, packedLight, packedOverlay);
+        bottom2.render(matrixStack, buffer, packedLight, packedOverlay);
+        spike3.render(matrixStack, buffer, packedLight, packedOverlay);
+        top3.render(matrixStack, buffer, packedLight, packedOverlay);
+        bottom3.render(matrixStack, buffer, packedLight, packedOverlay);
+        spike4.render(matrixStack, buffer, packedLight, packedOverlay);
+        top4.render(matrixStack, buffer, packedLight, packedOverlay);
+        bottom4.render(matrixStack, buffer, packedLight, packedOverlay);
+        torso.render(matrixStack, buffer, packedLight, packedOverlay);
+        torso2.render(matrixStack, buffer, packedLight, packedOverlay);
+        torso3.render(matrixStack, buffer, packedLight, packedOverlay);
+        torso4.render(matrixStack, buffer, packedLight, packedOverlay);
     }
+
+
 
     public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z)
     {
@@ -158,4 +177,6 @@ public class ModelYeti<T extends Entity> extends EntityModel<T>
         modelRenderer.yRot = y;
         modelRenderer.zRot = z;
     }
+
+
 }
