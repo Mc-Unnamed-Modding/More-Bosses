@@ -1,7 +1,6 @@
 package com.unnamedmodding.unnamedbosses;
 
 import com.unnamedmodding.unnamedbosses.entities.ModEntityRegistry;
-import com.unnamedmodding.unnamedbosses.entities.YetiEntity;
 import com.unnamedmodding.unnamedbosses.entities.render.RenderYeti;
 import com.unnamedmodding.unnamedbosses.setup.Registration;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
