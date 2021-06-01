@@ -1,6 +1,7 @@
 package com.unnamedmodding.unnamedbosses.entities.render;
 
 import com.unnamedmodding.unnamedbosses.UnnamedBosses;
+import com.unnamedmodding.unnamedbosses.entities.yeti.YetiEntity;
 import com.unnamedmodding.unnamedbosses.entities.model.ModelYeti;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.MobRenderer;

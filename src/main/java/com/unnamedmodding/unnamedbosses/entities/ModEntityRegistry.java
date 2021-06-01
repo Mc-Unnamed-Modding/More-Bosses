@@ -1,6 +1,7 @@
 package com.unnamedmodding.unnamedbosses.entities;
 
 import com.unnamedmodding.unnamedbosses.UnnamedBosses;
+import com.unnamedmodding.unnamedbosses.entities.yeti.YetiEntity;
 import com.unnamedmodding.unnamedbosses.setup.Registration;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
